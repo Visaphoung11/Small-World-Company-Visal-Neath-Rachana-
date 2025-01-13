@@ -88,15 +88,17 @@
           climate change and preserve essential ecosystems for future
           generations.
         </p>
-        <button
-          type="button"
-          class="btn btn-warning btn-lg fw-medium"
-          style="color: #fff"
-          data-bs-toggle="modal"
-          data-bs-target="#donationModal"
+        <a href="#donation-form"
+          ><button
+            type="button"
+            class="btn btn-warning btn-lg fw-medium"
+            style="color: #fff"
+            data-bs-toggle="modal"
+            data-bs-target="#donationModal"
+          >
+            Donate Now
+          </button></a
         >
-          Donate Now
-        </button>
       </div>
     </section>
 
@@ -541,66 +543,75 @@
 
     <!-- Donation Form Modal -->
     <!-- Donation Form -->
-    <section id="donation-form" class="py-5">
-      <div class="container">
-        <h2 class="text-center my-5">Donate</h2>
-        <form action="/submit-donation" method="POST" class="row g-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              class="form-control"
-              required
-            />
+    <section id="donate" style="margin-left: 30px">
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="">
+            <div class="">
+              <h5 class="card-title" style="text-align: center">
+                Please Donation
+              </h5>
+              <label for="" class="form-label">Email</label>
+              <input
+                <!--
+                type="email"
+                class="form-control"
+                <!--
+                aria-describedby="passwordHelpBlock"
+                --
+              />
+
+              <div id="passwordHelpBlock" class="form-text"></div>
+              <label for="inputPassword5" class="form-label">Phone</label>
+              <input
+                type="number"
+                id="inputPassword5"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+              />
+
+              <div id="passwordHelpBlock" class="form-text"></div>
+              <label for="inputPassword5" class="form-label">First Name</label>
+              <input
+                type="text"
+                id="inputPassword5"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+              />
+              <br />
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success" type="button">Donate</button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              class="form-control"
-              required
-            />
+        </div>
+        <div class="col-sm-6">
+          <div class="form-container">
+            <div class="form-logo" p-4>
+              <div class="image">
+                <h5 class="card-title text-center">
+                  Your generous donation supports meaningful causes, making a
+                  positive impact and fostering change for all.
+                </h5>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <label for="visaCardNumber" class="form-label"
-              >Visa Card Number:</label
-            >
-            <input
-              type="text"
-              id="visaCardNumber"
-              name="visaCardNumber"
-              class="form-control"
-              placeholder="Visa Card Number"
-              maxlength="16"
-              pattern="[0-9]{16}"
-              required
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="amount" class="form-label">Donation Amount:</label>
-            <input
-              type="number"
-              id="amount"
-              name="amount"
-              placeholder="Amount"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-warning" id="donate">
-              Donate
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
+    <style>
+      .image {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1595813252108-54f647b4a544?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXRpZnVsJTIwZm9yZXN0fGVufDB8fDB8fHww")
+            no-repeat center center/cover;
+        color: white;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
 
     <!-- FAQ Section -->
     <section id="faq" class="bg-light py-5 animate-faq">
@@ -626,6 +637,18 @@
               aria-labelledby="faq1"
               data-bs-parent="#faqAccordion"
             >
+              <div class="accordion-body">
+                Reforestation is the process of planting trees to restore
+                deforested areas.
+              </div>
+              <div class="accordion-body">
+                Reforestation is the process of planting trees to restore
+                deforested areas.
+              </div>
+              <div class="accordion-body">
+                Refor estation is the process of planting trees to restore
+                deforested areas.
+              </div>
               <div class="accordion-body">
                 Reforestation is the process of planting trees to restore
                 deforested areas.
