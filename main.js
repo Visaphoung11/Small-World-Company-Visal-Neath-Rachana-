@@ -43,52 +43,52 @@ document.getElementById("donate").addEventListener("click", function (event) {
 });
 
 //interactive donate button
-document.querySelectorAll(".btn-warning").forEach((button) => {
-  button.addEventListener("click", function (e) {
-    const rect = this.getBoundingClientRect();
-    const ripple = document.createElement("span");
+// document.querySelectorAll(".btn-warning").forEach((button) => {
+//   button.addEventListener("click", function (e) {
+//     const rect = this.getBoundingClientRect();
+//     const ripple = document.createElement("span");
 
-    // Set the ripple position and size
-    const size = Math.max(rect.width, rect.height);
-    ripple.style.width = ripple.style.height = `${size}px`;
-    ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
-    ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+//     // Set the ripple position and size
+//     const size = Math.max(rect.width, rect.height);
+//     ripple.style.width = ripple.style.height = `${size}px`;
+//     ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+//     ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
 
-    ripple.classList.add("ripple");
+//     ripple.classList.add("ripple");
 
-    // Append the ripple effect to the button
-    this.appendChild(ripple);
+//     // Append the ripple effect to the button
+//     this.appendChild(ripple);
 
-    // Remove the ripple after the animation
-    ripple.addEventListener("animationend", () => {
-      ripple.remove();
-    });
-  });
-});
+//     // Remove the ripple after the animation
+//     ripple.addEventListener("animationend", () => {
+//       ripple.remove();
+//     });
+//   });
+// });
 
 // interactive donate button in the form
-document.querySelectorAll(".btn-warning, .btn-primary").forEach((button) => {
-  button.addEventListener("click", function (e) {
-    const rect = this.getBoundingClientRect();
-    const ripple = document.createElement("span");
+// document.querySelectorAll(".btn-warning, .btn-primary").forEach((button) => {
+//   button.addEventListener("click", function (e) {
+//     const rect = this.getBoundingClientRect();
+//     const ripple = document.createElement("span");
 
-    // Set the ripple position and size
-    const size = Math.max(rect.width, rect.height);
-    ripple.style.width = ripple.style.height = `${size}px`;
-    ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
-    ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+//     // Set the ripple position and size
+//     const size = Math.max(rect.width, rect.height);
+//     ripple.style.width = ripple.style.height = `${size}px`;
+//     ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+//     ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
 
-    ripple.classList.add("ripple");
+//     ripple.classList.add("ripple");
 
-    // Append the ripple effect to the button
-    this.appendChild(ripple);
+//     // Append the ripple effect to the button
+//     this.appendChild(ripple);
 
-    // Remove the ripple after the animation
-    ripple.addEventListener("animationend", () => {
-      ripple.remove();
-    });
-  });
-});
+//     // Remove the ripple after the animation
+//     ripple.addEventListener("animationend", () => {
+//       ripple.remove();
+//     });
+//   });
+// });
 
 // about section Function to check if an element is in the viewport
 function isInViewport(element) {
