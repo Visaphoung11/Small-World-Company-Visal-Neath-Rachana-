@@ -555,32 +555,57 @@
               <h5 class="card-title fs-2 mt-5 mb-4" style="text-align: center">
                 Please Donation
               </h5>
-              <label for="" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                aria-describedby="passwordHelpBlock"
-              />
+              <div id="passwordHelpBlock" class="form-text mt-4">
+                <label for="" class="form-label text-black">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="passwordHelpBlock"
+                  placeholder="Your Email"
+                />
+              </div>
 
-              <div id="passwordHelpBlock" class="form-text"></div>
-              <label for="inputPassword5" class="form-label">Phone</label>
-              <input
-                type="number"
-                id="inputPassword5"
-                class="form-control"
-                aria-describedby="passwordHelpBlock"
-              />
+              <div id="passwordHelpBlock" class="form-text mt-4">
+                <label for="inputPassword5" class="form-label text-black"
+                  >Phone</label
+                >
+                <input
+                  type="number"
+                  id="number"
+                  class="form-control"
+                  aria-describedby="passwordHelpBlock"
+                  placeholder="Phone Number"
+                />
+              </div>
 
-              <div id="asswordHelpBlock" class="form-text"></div>
-              <label for="inputPassword5" class="form-label">First Name</label>
-              <input
-                type="text"
-                id="inputPassword5"
-                class="form-control"
-                aria-describedby="passwordHelpBlock"
-              />
-              <br />
-              <div class="d-grid gap-2 col-6 mx-auto">
+              <div id="asswordHelpBlock" class="form-text mt-4">
+                <label for="inputPassword5" class="form-label text-black"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  class="form-control"
+                  aria-describedby="passwordHelpBlock"
+                  placeholder="First Name"
+                />
+              </div>
+
+              <div id="asswordHelpBlock" class="form-text mt-4">
+                <label for="inputPassword5" class="form-label text-black"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  class="form-control"
+                  aria-describedby="passwordHelpBlock"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="d-grid gap-2 col-6 mx-auto mt-4">
                 <button class="btn btn-success" type="button">Donate</button>
               </div>
             </div>
@@ -617,7 +642,7 @@
 
     <!-- FAQ Section -->
     <section id="faq" class="bg-light py-5 animate-faq">
-      <div class="container">
+      <div class="container-fluid">
         <h2 class="text-center">FAQ</h2>
         <div class="accordion" id="faqAccordion">
           <div class="accordion-item">
