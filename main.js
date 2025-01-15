@@ -16,19 +16,21 @@ document.getElementById("user-form").addEventListener("submit", (e) => {
   const lastName = document.getElementById("last-name").value.trim();
 
   if (!email && !number && !firstName && !lastName) {
-    alert("Please fill your email");
+    alert("please fill out your information");
   }
   // Email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
-    alert("Please enter a valid email.");
+    alert("Please fill your email.");
     return;
   }
+
   //number validation
   if (number.length < 7 || number.length > 15) {
     alert("Please enter your phone number");
     return;
   }
+
   alert("Thank you so much");
 });
 
