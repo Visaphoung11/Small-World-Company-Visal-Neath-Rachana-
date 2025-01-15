@@ -7,39 +7,29 @@ navLinks.forEach((link) => {
   });
 });
 
-//donate button in the form
-document.getElementById("donate").addEventListener("click", function (event) {
-  event.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
+//form function
+document.getElementById("user-form").addEventListener("submit", (e) => {
+  e.preventDefault();
   const email = document.getElementById("email").value.trim();
-  const visaCardNumber = document
-    .getElementById("visaCardNumber")
-    .value.replace(/\D/g, "")
-    .trim();
-  const amount = parseFloat(document.getElementById("amount").value.trim());
+  const number = document.getElementById("number").value.trim();
+  const firstName = document.getElementById("first-name").value.trim();
+  const lastName = document.getElementById("last-name").value.trim();
 
-  if (!name) {
-    alert("Name cannot be blank.");
+  if (!email && !number && !firstName && !lastName) {
+    alert("Please fill your email");
+  }
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email.");
     return;
   }
-
-  if (!email) {
-    alert("Email cannot be blank.");
+  //number validation
+  if (number.length < 7 || number.length > 15) {
+    alert("Please enter your phone number");
     return;
   }
-
-  if (!visaCardNumber.match(/^\d{16}$/)) {
-    alert("Visa Card Number must be exactly 16 digits.");
-    return;
-  }
-
-  if (!amount || isNaN(amount) || amount <= 0) {
-    alert("Please enter a valid donation amount.");
-    return;
-  }
-
-  alert("Donation is successful. Thank you for your contribution!");
+  alert("Thank you so much");
 });
 
 //interactive donate button
