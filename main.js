@@ -193,8 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 2700);
 });
 
-// Select the FAQ section
-const faqSection = document.querySelector("#faq");
+// Select all FAQ sections with the animate-faq class
+const faqSections = document.querySelectorAll(".animate-faq");
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver(
@@ -202,18 +202,20 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         // Add the 'visible' class when in view
-        faqSection.classList.add("visible");
-      } else {
-        // Remove the 'visible' class when out of view (optional)
-        faqSection.classList.remove("visible");
+        entry.target.classList.add("visible");
+        // Stop observing after animation is triggered (optional)
+        // observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.1 }
+  {
+    threshold: 0.1,
+    rootMargin: "50px", // Triggers slightly before the element comes into view
+  }
 );
 
-// Observe the FAQ section
-observer.observe(faqSection);
+// Observe all FAQ sections
+faqSections.forEach((section) => observer.observe(section));
 
 // Select the Vision section
 const visionSection = document.querySelector("#vision");
