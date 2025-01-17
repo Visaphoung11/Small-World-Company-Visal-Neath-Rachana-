@@ -1,7 +1,7 @@
 /* For fade-in animations */
 .fade-in {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
 }
 
 .fade-in.visible {
@@ -12,7 +12,7 @@
 .text-slide {
   transform: translateY(20px);
   opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 
 .text-slide.visible {
@@ -23,7 +23,7 @@
 /* For FAQ animations */
 .animate-faq {
   opacity: 0;
-  transition: opacity 0.3s ease; /* Faster fade-in */
+  transition: opacity 0.15s ease; /* Faster fade-in */
 }
 
 .animate-faq.visible {
@@ -33,7 +33,7 @@
 /* For vision section background fade-in */
 #vision {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
 }
 
 #vision.visible {
@@ -43,7 +43,7 @@
 /* For slideshow images */
 .slideshow-image {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .slideshow-image.active {
@@ -53,7 +53,7 @@
 /* For home section image change animation */
 .fade-slide {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .fade-slide.active {
@@ -64,7 +64,7 @@
 .animate-on-view {
   opacity: 0;
   transform: translateY(50px); /* Start position (slide in from bottom) */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 /* Visible state */
@@ -77,7 +77,7 @@
 .text-slide {
   opacity: 0;
   transform: translateX(-100%); /* Start completely off-screen on the left */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
 }
 
 .text-slide.visible {
@@ -94,7 +94,7 @@
 .img-slide {
   opacity: 0;
   transform: translateX(100%); /* Start completely off-screen on the right */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
 }
 
 .img-slide.visible {
@@ -112,7 +112,7 @@
 .animate-on-view {
   opacity: 0;
   transform: translateY(20px); /* Adjust for the desired slide effect */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 /* Visible state */
@@ -124,7 +124,7 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease; /* Default slow animation */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Default slow animation */
 }
 
 /* Ensure the first image is visible initially */
@@ -136,13 +136,13 @@
 .text-slide {
   opacity: 0;
   transform: translateX(-100px);
-  transition: all 0.6s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .image-slide {
   opacity: 0;
   transform: translateX(100px);
-  transition: all 0.6s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /* Active state when element is in view */
@@ -155,7 +155,7 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
 }
 
 /* Active state when in view */
@@ -165,7 +165,7 @@
 }
 
 .fade-in {
-  animation: fadeInSlide 1s ease-in-out;
+  animation: fadeInSlide 0.5s ease-in-out;
 }
 
 @keyframes fadeInSlide {
@@ -184,7 +184,7 @@
   text-align: center;
   transform: translateY(30px);
   opacity: 0;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 
 .mission-content.visible {
@@ -195,7 +195,7 @@
 .text-slide {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .text-slide.visible {
@@ -207,39 +207,39 @@
 .animate-on-view {
   opacity: 0;
   transform: translateY(50px); /* Start position (slide in from bottom) */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out,
-    transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+    transform 0.15s ease-in-out;
 }
 
 /* For card animation, add scaling */
 .animate-on-view.card {
   transform: translateY(50px) scale(0.9); /* Start position with scale */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 /* Staggered animation delay for each card */
 .animate-card:nth-child(1) {
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .animate-card:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .animate-card:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .animate-card:nth-child(4) {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 
 .animate-card:nth-child(5) {
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 
 .animate-card:nth-child(6) {
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 
 /* Visible state */
@@ -252,7 +252,7 @@
 .animate-faq {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 /* Animation State */
@@ -318,7 +318,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  transition: max-height 0.15s ease-out, opacity 0.15s ease-out;
 }
 
 .expandable-content.expanded {
@@ -333,7 +333,7 @@
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   font-weight: 500;
 }
 
@@ -349,7 +349,7 @@
 .expandable-content p {
   transform: translateY(20px);
   opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
 }
 
 .expandable-content.expanded p {
@@ -359,9 +359,9 @@
 
 /* Stagger the animation of paragraphs */
 .expandable-content.expanded #second-content {
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .expandable-content.expanded #third-content {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
