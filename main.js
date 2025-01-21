@@ -59,6 +59,28 @@ window.addEventListener("scroll", handleScroll);
 // Initial check
 handleScroll();
 
+//image slide show for about section
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".slideshow-image");
+  let currentIndex = 0;
+
+  // Hide all images except the first one
+  images.forEach((image, index) => {
+    image.style.opacity = index === 0 ? "1" : "0";
+    image.style.transition = "opacity 1s ease-in-out";
+  });
+
+  // Function to show the next image
+  const showNextImage = () => {
+    images[currentIndex].style.opacity = "0"; // Hide the current image
+    currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+    images[currentIndex].style.opacity = "1"; // Show the next image
+  };
+
+  // Set an interval to call the function every 3 seconds
+  setInterval(showNextImage, 3000);
+});
+
 //about read more
 document.addEventListener("DOMContentLoaded", () => {
   const readMoreBtn = document.getElementById("read-more-btn");
