@@ -22,12 +22,11 @@ Small World Company is a collaborative project by Visal, Neath, and Rachana. Our
     code .
     ```
 ## Technology we use 
-```bash
+
 1.JavaScript
 2.HTML
 3.CSS
 4.Bootstrap 
-```
 
 
 ## Contributing
