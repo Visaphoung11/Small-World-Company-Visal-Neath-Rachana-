@@ -27,7 +27,7 @@ Small World Company is a collaborative project by Visal, Neath, and Rachana. Our
 2.HTML
 3.CSS
 4.Bootstrap 
-```
+``` 
 
 
 ## Contributing
@@ -37,7 +37,7 @@ We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Authors
-- Visal
+- Visal(Team Leader)
 - Neath
 - Rachana
 
